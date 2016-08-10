@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dulp</title>
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+	<div class="screen__start">
+		<div class="screen__start--game-name">dulp</div>
+		<div class="screen__start--created-by">(version by learn.javascript.ru students)</div>
+	<button class="screen__start--btn btn__continue invisible" data-action="continue">CONTINUE</button>
+		<button class="screen__start--btn btn__start" data-action="newgame">NEW GAME</button>
+	</div>
+
+	<div class="screen__game invisible">
+		<div class="circle">
+			<ul class="js-circle">
+			</ul>
+			<div class="circle__center"></div>
+		</div>
+
+			<ul class="bullets js-bullets"></ul>
+
+		<button class="screen__game--pause" data-action="pause">| |</button>
+	</div>
+
+	<div class="screen__pause invisible">
+		<button class="screen__pause--btn btn__continue" data-action="continue">CONTINUE</button>
+	<button class="screen__pause--btn btn__exit" data-action="exit">EXIT</button>
+	</div>
+
+	<div class="screen__win invisible">
+		<div class="screen__win--verdict">Level passed!</div>
+		<button class="screen__win--btn btn__continue" data-action="nextlevel">NEXT LEVEL</button>
+		<button class="screen__win--btn btn__exit" data-action="exit">EXIT</button>
+	</div>
+
+	<div class="screen__lose invisible">
+		<div class="screen__lose--verdict">You missed!</div>
+		<button class="screen__lose--btn btn__tryagain" data-action="tryagain">TRY AGAIN</button>
+		<button class="screen__lose--btn btn__exit" data-action="exit">EXIT</button>
+	</div>
+
+	<script src="/js/app.min.js"></script>
+</body>
+</html>
